@@ -1,0 +1,21 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://rrs-api.techolution.qa:8761/eureka/
+  instance:
+    hostname: rrs-api.techolution.qa
+    status-page-url: http://rrs-api.techolution.qa:${server.port}/info
+    health-check-url: http://rrs-api.techolution.qa:${server.port}/health
+    home-page-url: http://rrs-api.techolution.qa:${server.port}/
+
+
+
+spring:
+   data:
+     mongodb:
+       uri : mongodb://admin:techorrs123@ds139689-a0.mlab.com:39689/rrs-dev-db
+       database  :  rrs-dev-db
+
+
+
+

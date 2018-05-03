@@ -1,0 +1,22 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+
+
+spring:
+#  cloud:
+#    config:
+#     uri: http://localhost:8888
+
+   data:
+     mongodb:
+       uri : mongodb://dinesh:test@localhost:27017/admin
+       database  :  rrs-dev
+
+
+
+
+
+

@@ -1,1 +1,41 @@
-server.port: 8978
+server:
+  port: 8989
+spring:
+  application:
+      name: FirstTimeFix
+  profiles:
+    active: local
+  security:
+    enabled: false
+security:
+  basic:
+     enabled: false
+
+hystrix:
+ threadpool:
+   default:
+     maximumSize: 10
+     coreSize: 10
+     maxQueueSize: -1
+     queueSizeRejectionThreshold: 5
+     keepAliveTimeMinutes: 1
+ command:
+   default:
+     execution:
+       timeout:
+         enabled: false
+       isolation:
+         thread:
+           timeoutINMilliseconds: 60000
+   circuitBreaker:
+     sleepWindowInMilliseconds: 30000
+     requestVolumeThreshold: 2
+
+
+
+
+
+
+
+
+
