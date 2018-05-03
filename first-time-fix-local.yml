@@ -9,8 +9,8 @@ server:
 spring:
    data:
      mongodb:
-       uri : mongodb://diwwnesh:twwest@localhost:27017/awdmin
-       database  :  rrss-dev
+       uri : mongodb://dinesh:test@localhost:27017/admin
+       database  :  rrs-dev
 
 
 
