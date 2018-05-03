@@ -3,14 +3,10 @@ eureka:
     service-url:
       defaultZone: http://localhost:8761/eureka/
 server:
-  port:8978
+    port: 8976
 
 
 spring:
-#  cloud:
-#    config:
-#     uri: http://localhost:8888
-
    data:
      mongodb:
        uri : mongodb://dinesh:test@localhost:27017/admin
